@@ -3,79 +3,73 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="max-w-screen-2xl mx-auto px-4 py-4 bg-green-500">
       <nav className="flex justify-between items-center">
         {/* Logo and Brand Name */}
-        <div className="text-white text-lg font-bold">Logo and Brand Name</div>
+        <div className="text-white font-bold">Logo and Brand Name</div>
 
-        {/* Hamburger Menu Button */}
+        {/* Hamburger Icon */}
         <button
-          className="text-white lg:hidden"
-          onClick={() => setIsOpen(!isOpen)}
+          className="text-white text-2xl md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle the state
           aria-label="Toggle Menu"
         >
           <Icon icon="mingcute:menu-fill" width="24" height="24" />
         </button>
 
-        {/* Navbar Links */}
+        {/* Navbar List Items */}
         <ul
           className={`${
-            isOpen ? "block" : "hidden"
-          } absolute left-0 top-16 bg-green-500 w-full lg:static lg:flex lg:gap-4 lg:bg-transparent transition-all duration-300 ease-in-out`}
+            isMenuOpen ? "block" : "hidden"
+          } md:flex md:gap-4 md:items-center absolute md:static bg-green-500 w-full md:w-auto left-0 top-16 md:top-0 py-4 md:py-0 z-10`}
         >
-          <li className="border-b lg:border-none">
+          <li>
             <Link
               to="/"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
               Home
             </Link>
           </li>
-          <li className="border-b lg:border-none">
+          <li>
             <Link
               to="/about"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
               About
             </Link>
           </li>
-          <li className="border-b lg:border-none">
+          <li>
             <Link
               to="/services"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
               Services
             </Link>
           </li>
-          <li className="border-b lg:border-none">
+          <li>
             <Link
-              to="/projects"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              to="/project"
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
-              Projects
+              Project
             </Link>
           </li>
-          <li className="border-b lg:border-none">
+          <li>
             <Link
               to="/team"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
               Team
             </Link>
           </li>
-          <li className="border-b lg:border-none">
+          <li>
             <Link
               to="/blog"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
               Blog
             </Link>
@@ -83,8 +77,7 @@ function Navbar() {
           <li>
             <Link
               to="/contact"
-              className="block px-4 py-2 text-white hover:bg-white hover:text-black transition-colors"
-              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 text-white rounded hover:bg-white hover:text-black transition-colors"
             >
               Contact
             </Link>
