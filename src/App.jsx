@@ -9,7 +9,6 @@ function App() {
       <main className="min-h-screen">
         <Outlet /> {/* This is where the nested routes will be rendered */}
       </main>
-      <footer>Footer</footer>
     </>
   );
 }

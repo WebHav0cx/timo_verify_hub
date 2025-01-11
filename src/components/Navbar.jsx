@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <header className="max-w-screen-2xl mx-auto px-4 py-4 bg-green-500">
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-around items-center">
         {/* Logo and Brand Name */}
         <div className="text-white font-bold">Logo and Brand Name</div>
 
@@ -83,6 +83,16 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+
+        <div className="flex gap-4 justify-center items-center">
+          <button className="rounded-full border-2 border-white py-2 px-4">
+            Sign In
+          </button>
+
+          <button className="rounded-full border-2 border-white py-2 px-4 hover:bg-white ">
+            Sign Up
+          </button>
+        </div>
       </nav>
     </header>
   );
