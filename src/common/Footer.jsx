@@ -57,8 +57,8 @@ function Footer() {
           <div className="flex flex-col gap-4">
             <h4>Get Started</h4>
             <ul className="flex flex-col gap-2">
-              <Link>Sign Up</Link>
-              <Link>Log In</Link>
+              <Link to="/signup">Sign Up</Link>
+              <Link to="/signin">Log In</Link>
               <li>Contact Sales</li>
               <li></li>
             </ul>

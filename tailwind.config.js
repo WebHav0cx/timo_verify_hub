@@ -5,6 +5,11 @@ export default {
     extend: {
       backgroundImage: {
         "footer-grid": "url('/src/assets/grid.png')",
+        "login-bg": "url('/src/assets/login_bg.png')",
+      },
+      backgroundColor: {
+        "default-green": "#26A16C",
+        "hover-green": "#71bc8f",
       },
     },
   },

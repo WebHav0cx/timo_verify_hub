@@ -1,9 +1,9 @@
 import React from "react";
 import Banner from "./Banner";
-import Navbar from "../../components/Navbar";
 import Offer from "./Offer";
 import About from "./About";
-import Footer from "../../components/Footer";
+import Footer from "../../common/Footer";
+import Navbar from "../../common/Navbar";
 
 function Home() {
   return (
