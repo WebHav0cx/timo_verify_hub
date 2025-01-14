@@ -58,10 +58,10 @@ function SignUp() {
             {/* "Don't have an account?" on Mobile */}
             <div className="mt-6 text-center md:hidden">
               <p className="text-gray-600">
-                Don't have an account?{" "}
-                <a href="#" className="text-blue-500 hover:underline">
-                  Sign up
-                </a>
+                Already have an account?
+                <Link to="/signin" className="text-blue-500 hover:underline">
+                  Sign In
+                </Link>
               </p>
             </div>
           </div>
