@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-footer-grid bg-black bg-cover bg-no-repeat overflow-hidden py-8 px-4 text-white">
-      <div className="flex justify-around items-center">
-        <div className="flex flex-col gap-3 justify-center items-center">
+    <footer className="bg-footer-grid bg-black bg-cover bg-no-repeat overflow-hidden py-8 px-4 text-white w-full">
+      <div className="flex flex-wrap justify-around items-center">
+        <div className="flex flex-wrap flex-col gap-3 justify-center items-center">
           <h3>Logo and Brand Name</h3>
           <div className="flex gap-2 justify-center items-center">
             <Icon
