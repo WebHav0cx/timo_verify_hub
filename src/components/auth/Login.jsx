@@ -3,6 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Login() {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    alert("Login successful!"); // Display success alert after login.
+  };
   return (
     <div className="bg-login-bg bg-cover bg-no-repeat overflow-hidden h-screen w-full">
       <div className="flex flex-col md:flex-row h-screen">
@@ -14,7 +18,7 @@ function Login() {
                 Sign in to VerifyHub
               </h1>
             </div>
-            <form className="flex flex-col gap-4">
+            <form onSubmit={handleLogin} className="flex flex-col gap-4">
               <input
                 className="border border-gray-500 p-2 rounded-md"
                 type="email"
@@ -30,7 +34,11 @@ function Login() {
                   Forgot Password?
                 </a>
               </div>
-              <button className="bg-button-green p-2 rounded-md text-white">
+              <button
+                typeof="submit"
+                type="submit"
+                className="bg-button-green p-2 rounded-md text-white"
+              >
                 Login
               </button>
             </form>

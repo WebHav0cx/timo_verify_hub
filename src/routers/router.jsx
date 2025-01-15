@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/home/Home";
 import Login from "../components/auth/Login";
 import SignUp from "../components/auth/SignUp";
+import Sidebar from "../common/Sidebar";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/dashboard",
+        element: <Sidebar />,
       },
     ],
   },
