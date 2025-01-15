@@ -30,12 +30,12 @@ function Login() {
                   Forgot Password?
                 </a>
               </div>
-              <button className="bg-green-500 p-2 rounded-md text-white">
+              <button className="bg-button-green p-2 rounded-md text-white">
                 Login
               </button>
             </form>
 
-            {/* Horizontal Rule and Additional Options */}
+            {/* Horizontal Rule */}
             <div className="mt-6">
               <div className="flex items-center">
                 <hr className="flex-grow border-gray-300" />

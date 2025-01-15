@@ -10,6 +10,7 @@ export default {
       backgroundColor: {
         "default-green": "#26A16C",
         "hover-green": "#71bc8f",
+        "button-green": "#63b994",
       },
     },
   },
